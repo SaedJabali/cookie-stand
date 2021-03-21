@@ -41,7 +41,7 @@ const Seattle = {
   minHourlyCustomers:23,
   maxHourlyCustomers:65,
   avgcookiesperCustomer:6.3,
-
+  total:0,
  
 
   render: function(){
@@ -54,13 +54,23 @@ const Seattle = {
     const ulEl = document.createElement('ul');
     section.appendChild(ulEl);
 
+
     for(let i=0; i< time.length; i++)
     {
       let x = Math.trunc(getRandomNumberSeattle(this.minHourlyCustomers,this.maxHourlyCustomers)*this.avgcookiesperCustomer);
       const liEl = document.createElement('li');
       ulEl.appendChild(liEl);
       liEl.textContent = [`${time[i]}:  ${x} cookies`];
+      this.total=this.total+x;
     }
+
+
+    const pEl= document.createElement('p');
+    section.appendChild(pEl);
+    pEl.textContent=`Total= ${this.total}`;
+
+
+
   }
 
 };
@@ -84,6 +94,7 @@ const Tokyo = {
   minHourlyCustomers:3,
   maxHourlyCustomers:24,
   avgcookiesperCustomer:1.2,
+  total:0,
 
   render: function(){
     const section = document.getElementById('tokyo');
@@ -103,8 +114,15 @@ const Tokyo = {
       const liEl = document.createElement('li');
       ulEl.appendChild(liEl);
       liEl.textContent = [`${time[i]}:  ${x} cookies`];
+      this.total=this.total+x;
     }
-  }
+
+
+    const pEl= document.createElement('p');
+    section.appendChild(pEl);
+    pEl.textContent=`Total= ${this.total}`;
+   }
+
 
 };
 
@@ -125,7 +143,7 @@ const Dubai = {
   minHourlyCustomers:11,
   maxHourlyCustomers:38,
   avgcookiesperCustomer:3.7,
-
+  total:0,
 
   render: function(){
     const section = document.getElementById('dubai');
@@ -143,8 +161,15 @@ const Dubai = {
       const liEl = document.createElement('li');
       ulEl.appendChild(liEl);
       liEl.textContent = [`${time[i]}:  ${x} cookies`];
+      this.total=this.total+x;
     }
-  }
+
+
+    const pEl= document.createElement('p');
+    section.appendChild(pEl);
+    pEl.textContent=`Total= ${this.total}`;
+    }
+  
 
 };
 
@@ -165,6 +190,7 @@ const Paris = {
   minHourlyCustomers:20,
   maxHourlyCustomers:38,
   avgcookiesperCustomer:2.3,
+  total:0,
 
   render: function(){
     const section = document.getElementById('paris');
@@ -182,8 +208,15 @@ const Paris = {
       const liEl = document.createElement('li');
       ulEl.appendChild(liEl);
       liEl.textContent = [`${time[i]}:  ${x} cookies`];
+      this.total=this.total+x;
     }
-  }
+
+
+    const pEl= document.createElement('p');
+    section.appendChild(pEl);
+    pEl.textContent=`Total= ${this.total}`;
+    }
+  
 
 };
 
@@ -201,6 +234,7 @@ const Lima = {
   minHourlyCustomers:2,
   maxHourlyCustomers:16,
   avgcookiesperCustomer:4.6,
+  total:0,
 
   render: function(){
     const section = document.getElementById('lima');
@@ -218,8 +252,15 @@ const Lima = {
       const liEl = document.createElement('li');
       ulEl.appendChild(liEl);
       liEl.textContent = [`${time[i]}:  ${x} cookies`];
+      this.total=this.total+x;
     }
-  }
+
+
+    const pEl= document.createElement('p');
+    section.appendChild(pEl);
+    pEl.textContent=`Total= ${this.total}`;
+    }
+  
 
 };
 

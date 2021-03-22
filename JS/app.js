@@ -34,7 +34,7 @@ let time = ['6am','7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm'
 function getRandomNumberSeattle(min,max){
   return(Math.floor(Math.random() * (max - min + 1) + min));
 }
-const Seattle = {
+const seattle = {
 
   name: 'seatlle',
 
@@ -42,7 +42,7 @@ const Seattle = {
   maxHourlyCustomers:65,
   avgcookiesperCustomer:6.3,
   total:0,
- 
+
 
   render: function(){
     const section = document.getElementById('seatlle');
@@ -75,7 +75,7 @@ const Seattle = {
 
 };
 
-Seattle.render();
+seattle.render();
 
 
 
@@ -87,7 +87,7 @@ function getRandomNumberTokyo(min,max){
   return(Math.floor(Math.random() * (max - min + 1) + min));
 }
 
-const Tokyo = {
+const tokyo = {
 
   name: 'Tokyo',
 
@@ -99,7 +99,6 @@ const Tokyo = {
   render: function(){
     const section = document.getElementById('tokyo');
 
-    
 
     const h2El = document.createElement('h2');
     section.appendChild(h2El);
@@ -121,12 +120,12 @@ const Tokyo = {
     const pEl= document.createElement('p');
     section.appendChild(pEl);
     pEl.textContent=`Total= ${this.total}`;
-   }
+  }
 
 
 };
 
-Tokyo.render();
+tokyo.render();
 
 
 
@@ -136,7 +135,7 @@ function getRandomNumberDubai(min,max){
   return(Math.floor(Math.random() * (max - min + 1) + min));
 }
 
-const Dubai = {
+const dubai = {
 
   name: 'Dubai',
 
@@ -168,12 +167,12 @@ const Dubai = {
     const pEl= document.createElement('p');
     section.appendChild(pEl);
     pEl.textContent=`Total= ${this.total}`;
-    }
-  
+  }
+
 
 };
 
-Dubai.render();
+dubai.render();
 
 
 
@@ -183,7 +182,7 @@ Dubai.render();
 function getRandomNumberParis(min,max){
   return(Math.floor(Math.random() * (max - min + 1) + min));
 }
-const Paris = {
+const paris = {
 
   name: 'Paris',
 
@@ -215,12 +214,12 @@ const Paris = {
     const pEl= document.createElement('p');
     section.appendChild(pEl);
     pEl.textContent=`Total= ${this.total}`;
-    }
-  
+  }
+
 
 };
 
-Paris.render();
+paris.render();
 
 
 
@@ -228,7 +227,7 @@ Paris.render();
 function getRandomNumberLima(min,max){
   return(Math.floor(Math.random() * (max - min + 1) + min));
 }
-const Lima = {
+const lima = {
 
   name: 'Lima',
   minHourlyCustomers:2,
@@ -259,10 +258,9 @@ const Lima = {
     const pEl= document.createElement('p');
     section.appendChild(pEl);
     pEl.textContent=`Total= ${this.total}`;
-    }
-  
+  }
 
 };
 
 
-Lima.render();
+lima.render();

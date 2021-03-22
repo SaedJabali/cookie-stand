@@ -36,7 +36,7 @@ function getRandomNumberSeattle(min,max){
 }
 const seattle = {
 
-  name: 'seatlle',
+  name: 'Seatlle',
 
   minHourlyCustomers:23,
   maxHourlyCustomers:65,

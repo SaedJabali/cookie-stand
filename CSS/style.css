@@ -1,6 +1,24 @@
+nav ul li{
+  list-style: none;
+  font-size: x-large;
+  background-color: lightgreen;
+  padding: 10px;
+  border: 10px solid white;
+  display: inline-block;
+  
+  
+}
+nav ul li a {
+  color:lightcoral;
+  text-decoration: none;
+}
+
 header h1 {
 
     color: darkorange;
+}
+header img{
+  width: 25%;
 }
 
 table, td, th {
@@ -11,4 +29,8 @@ background-color: lightblue;
   table {
     width: 80%;
     border-collapse: collapse;
+  }
+
+  article h1 {
+    color: darkorange;
   }

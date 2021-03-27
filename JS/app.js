@@ -11,7 +11,7 @@ const tabelElement = document.createElement('table');
 articleElement.appendChild(tabelElement);
 let footerCells = [];
 let myForm = document.getElementById('stores');
-let newOnes = document.getElementById('place');
+// let newOnes = document.getElementById('place');
 function Lacations(location, minHourlyCustomers, maxHourlyCustomers, avgcookiesperCustomer) {
   this.location = location;
   this.total = 0;
@@ -126,15 +126,14 @@ function addNewCity(event) {
 
   let cityName = event.target.site.value;
   console.log(cityName);
-  let minNum = event.target.minimum.value;
+  let minNum = Number(event.target.minimum.value);
   console.log(minNum);
-  let maxNum = event.target.maximum.value;
+  let maxNum = Number(event.target.maximum.value);
   console.log(maxNum);
-  let cookieAvg = event.target.average.value;
+  let cookieAvg = Number(event.target.average.value);
   console.log(cookieAvg);
 
   let newSite = new Lacations(cityName, minNum, maxNum, cookieAvg);
-
 
 
   newSite.render();

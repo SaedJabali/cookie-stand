@@ -1,14 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Short+Stack">
+    <link rel="stylesheet" href="CSS/style.css">
     <title>Sale</title>
 </head>
 <body>
 <header>
     <h1>Salmon Restursnt</h1>
 </header>
-
+<main>
+<form id="stores">
+    <fieldset >
+        <legend >Add New Store</legend>
+        <label for="Location">Location</label>
+        <input type="text" name="location" id="site"/>
+        <br/>
+        <br/>
+        <label for="Minimum">MinCustomers</label>
+        <input type="number" name="minimum" id="minimum"/>
+        <br/>
+        <br/>
+        <label for="MAximum">MaxCustomers</label>
+        <input type="number" name="maximum" id="maximum"/>
+        <br/>
+        <br/>
+        <label for="Average">AvgCookies</label>
+        <input type="number" name="average" id="average"/>
+        <br/>
+        <br/>
+        <input type="submit" value="Add New Store" />
+    </fieldset>
+    <section id="newcities">
+        
+    </section>
 </form>
 <section id="place">
     <!-- <table>
@@ -29,37 +55,11 @@
         </tr>
     </table> -->
 </section>
-          <main>
-            <form id="stores">
-                <fieldset >
-                    <legend >Add new store</legend>
-                    <label for="Location">Location</label>
-                    <input type="text" name="location" id="site"/>
-                    <br/>
-                    <br/>
-                    <label for="Minimum">MinCustomers</label>
-                    <input type="number" name="minimum" id="minimum"/>
-                    <br/>
-                    <br/>
-                    <label for="MAximum">MaxCustomers</label>
-                    <input type="number" name="maximum" id="maximum"/>
-                    <br/>
-                    <br/>
-                    <label for="Average">AvgCookies</label>
-                    <input type="number" name="average" id="average"/>
-                    <br/>
-                    <br/>
-                    <input type="submit" value="Add new store" />
-                </fieldset>
-                <section id="newcities">
-                    
-                </section>
+          
           </main>
 <footer>
 </footer>
-<script src="latest.js"></script>
+<script src="JS/app.js"></script>
 </body>
 </html>
-
-
 

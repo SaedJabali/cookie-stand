@@ -8,6 +8,14 @@ nav ul li{
   
   
 }
+body > header > img{
+      width: 25%;
+    margin-left: 487px;
+    margin-bottom: 13px;
+}
+main{
+  background-color:peachpuff;
+}
 nav ul li a {
   color:lightcoral;
   text-decoration: none;
@@ -15,22 +23,64 @@ nav ul li a {
 
 header h1 {
 
+  font-family: 'Short Stack', cursive;
     color: darkorange;
 }
 header img{
   width: 25%;
+  
 }
 
 table, td, th {
-background-color: lightblue;
+background-color: whitesmoke;
     text-align: center;
     border: 3px solid black;
+    font-family:Arial, Helvetica, sans-serif;
+    color:brown;
+    
+
   }
   table {
-    width: 80%;
+    width: 100%;
     border-collapse: collapse;
   }
 
   article h1 {
     color: darkorange;
+    font-family: 'Short Stack', cursive;
   }
+
+  article p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:lightseagreen;
+
+  }
+
+  #stores{
+
+    
+    background-image: url(https://st3.depositphotos.com/2000583/17908/v/1600/depositphotos_179085604-stock-illustration-hand-drawn-cookies-pattern-seamless.jpg);
+
+    text-align: center;
+    font-weight: bold;
+    /* display: inline-block; */
+    /* background-repeat: no-repeat;
+width: 100%; */
+  }
+
+
+article{
+  text-align: center;
+}
+
+#fam
+ {
+   width: 35%;
+   
+ }
+
+ section{
+   text-align: center;
+
+  
+ }
